@@ -17,9 +17,18 @@ export default function Messagereducer(state = initialState, action) {
 
 //action
 export const getMessages = () => async (dispatch) => {
-  const { res } = await axios.get(Url);
+  const { data } = await axios.get("http://127.0.0.1:3000/api/messages");
+  console.log(data);
   dispatch({
     type: "GET_MESSAGES",
-    payload: res.data[0],
+    payload: data[0],
   });
 };
+
+/* export const getMessages = () => (dispatch) => {
+  axios.get(Url).then((resonse) => {
+    const { data } = resonse;
+    dispatch({ type: "GET_MESSAGES", payload: data[0] });
+  });
+};
+ */

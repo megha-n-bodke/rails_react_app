@@ -1,7 +1,21 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { getMessages } from "./Redux/reducer";
 
 const Greetings = () => {
-  return <div>Greetings</div>;
+  const greetings = useSelector((state) => state.greeting);
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(getMessages());
+  }, [dispatch]);
+
+  return (
+    <div>
+      <h1>{greetings.message}</h1>
+      <h2>On greetings page</h2>
+    </div>
+  );
 };
 
 export default Greetings;
