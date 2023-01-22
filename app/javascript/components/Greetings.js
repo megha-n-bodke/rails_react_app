@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { getMessages } from "./Redux/reducer";
+import { getMessages } from "../Redux/reducer";
 
 const Greetings = () => {
   const greetings = useSelector((state) => state.greeting);
@@ -13,7 +13,6 @@ const Greetings = () => {
   return (
     <div>
       <h1>{greetings.message}</h1>
-      <h2>On greetings page</h2>
     </div>
   );
 };

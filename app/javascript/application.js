@@ -2,17 +2,16 @@ import React from "react";
 import ReactDOM from "react-dom";
 import { Provider } from "react-redux";
 import store from "./Redux/store";
-import Greetings from "./Greetings";
+import App from "./components/App";
+import { BrowserRouter } from "react-router-dom";
 
-function App() {
-  return (
-    <>
+ReactDOM.render(
+  <>
+    <BrowserRouter>
       <Provider store={store}>
-        <h1>Hello World!!!!!!</h1>
-        <Greetings />
+        <App />
       </Provider>
-    </>
-  );
-}
-
-ReactDOM.render(<App />, document.getElementById("root"));
+    </BrowserRouter>
+  </>,
+  document.getElementById("root")
+);
