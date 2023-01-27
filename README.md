@@ -174,10 +174,10 @@ To run tests, run the following command:
 
 ## 👥 Authors <a name="authors"></a>
 
-👤 **Tracy Musongole**
+👤 **Megha Bodke**
 
-- GitHub: [@TracyMuso](https://github.com/TracyMuso)
-- LinkedIn: [Tracy Musongole](https://www.linkedin.com/in/tracy-muso/)
+- GitHub: [@megha-n-bodke](https://github.com/megha-n-bodke)
+- LinkedIn: [Megha Bodke](https://www.linkedin.com/in/megha-bodke/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
